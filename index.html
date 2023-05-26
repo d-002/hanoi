@@ -1,0 +1,30 @@
+
+<html>
+  <head>
+    <title>Hanoi towers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body onload="start();">
+    <div id="header">
+      <div id="settings">
+        <form>
+          <label for="n">Number of pieces:</label>
+          <select id="n" default="4"></select>
+        </form>
+        <br>
+        <a href="javascript:restart();">Restart</a>
+        <a href="javascript:showsolution();">Show solution</a>
+      </div>
+      <div id="stats">
+        <p id="moves0"></p>
+        <p id="moves1"></p>
+      </div>
+    </div>
+    <canvas id="canvas" width="900" height="300"></canvas>
+    <div id="footer">
+      <p>Move all the disks from the left pole to the right pole in the least amount of moves, by only moving one disk at a time. You cannot place a disk on a pole if the disk below is smaller.</p>
+    </div>
+  </body>
+</html>
